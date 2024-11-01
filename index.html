@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Vertica</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-brand">VERTICA</div>
+        <div class="navbar-links">
+            <a href="#Home-section">HOME</a>
+            <a href="#shopping-section">SHOPPING</a>
+            <a href="#">WEDDINGS</a>
+            <a href="Form.html" class="no-underline">CONTACT US</a>
+            <div class="search-bar">
+                <i class="fas fa-search" style="color: black;"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="shopping-cart">
+                <div class="cart-icon">
+                    <img src="img/shopping.svg">
+                    <span class="quantity">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="shopping-container">
+        <h1 class="Card-title">Card <span class="item-count">(0)</span></h1>
+        <div class="close-button"><i class="fas fa-times"></i></div>
+        <div class="msg">
+            <p class="empty-basket-message">Empty basket</p>
+            <p class="empty-basket-submessage">Your basket is still empty, discover everything we’ve got for you</p>
+            <button class="discover-button">Discover</button>
+        </div>
+        <div class="cart-items">
+
+        </div>
+        <div class="total-section">
+            <div class="process">
+                <p>Total:</p>
+                <span class="total-price">$0.00</span>
+            </div>
+            <button class="process-order-button">PROCESS ORDER</button>
+        </div>
+    </div>
+
+    <section class="section" id="Home-section">
+        <div class="section-content">
+            <h1>Send <span style="color: rgb(235, 99, 111);">flowers</span> like you mean it.</h1>
+            <p>
+                Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will make it special cursus a sit amet mauris.
+            </p>
+        </div>
+        <div class="section-image">
+            <img src="img/tulips-love_1.png" />
+        </div>
+    </section>
+
+    <div class="flower-nav" id="shopping-section">
+        <div class="flower-nav-links">
+            <a href="#" class="flower-category-link flower-all-link" data-category="all">ALL</a>
+            <a href="#" class="flower-category-link" data-category="flowers">FLOWERS</a>
+            <a href="#" class="flower-category-link" data-category="plants">PLANTS</a>
+            <a href="#" class="flower-category-link" data-category="occasions">OCCASIONS</a>
+            <a href="#" class="flower-category-link" data-category="gifts">GIFTS</a>
+            <a href="#" class="flower-category-link" data-category="luxury">LUXURY COLLECTION</a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="row">
+            <div class="image-box flower-box">
+                <img src="img/flowers/flower1.jpg" data-hover="img2/img1.jpg" data-original-src="img/flowers/flower1.jpg" />
+                <p class="item-name">Flower 1</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box flower-box">
+                <img src="img/flowers/flower2.jpg" data-hover="img2/img2.jpg" data-original-src="img/flowers/flower2.jpg" />
+                <p class="item-name">Flower 2</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box flower-box">
+                <img src="img/flowers/flower3.jpg" data-hover="img2/img3.jpg" data-original-src="img/flowers/flower3.jpg" />
+                <p class="item-name">Flower 3</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box flower-box">
+                <img src="img/flowers/flower4.jpg" data-hover="img2/img4.jpg" data-original-src="img/flowers/flower4.jpg" />
+                <p class="item-name">Flower 4</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-box gift-box">
+                <img src="img/gifts/gift1.jpg" data-original-src="img/gifts/gift1.jpg" />
+                <p class="item-name">Flower 5</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box gift-box">
+                <img src="img/gifts/gift2.jpg" data-hover="img2/img6.jpg" data-original-src="img/gifts/gift2.jpg" />
+                <p class="item-name">Flower 6</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box gift-box">
+                <img src="img/gifts/gift3.jpg" data-hover="img2/img7.jpg" data-original-src="img/gifts/gift3.jpg" />
+                <p class="item-name">Flower 7</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box gift-box">
+                <img src="img/gifts/gift4.jpg" data-original-src="img/gifts/gift4.jpg" />
+                <p class="item-name">Flower 8</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-box luxury-box">
+                <img src="img/luxury/luxury1.jpg" data-hover="img2/img9.jpg" data-original-src="img/luxury/luxury1.jpg" />
+                <p class="item-name">Flower 9</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box luxury-box">
+                <img src="img/luxury/luxury2.jpg" data-hover="img2/img10.jpg" data-original-src="img/luxury/luxury2.jpg" />
+                <p class="item-name">Flower 10</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box luxury-box">
+                <img src="img/luxury/luxury3.jpg" data-hover="img2/img11.jpg" data-original-src="img/luxury/luxury3.jpg" />
+                <p class="item-name">Flower 11</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box luxury-box">
+                <img src="img/luxury/luxury4.jpg" data-hover="img2/img12.jpg" data-original-src="img/luxury/luxury4.jpg" />
+                <p class="item-name">Flower 12</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-box occasions-box">
+                <img src="img/occasions/occasion1.jpg" data-hover="img2/img13.jpg" data-original-src="img/occasions/occasion1.jpg" />
+                <p class="item-name">Flower 13</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box occasions-box">
+                <img src="img/occasions/occasion2.jpg" data-hover="img2/img14.jpg" data-original-src="img/occasions/occasion2.jpg" />
+                <p class="item-name">Flower 14</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box occasions-box">
+                <img src="img/occasions/occasion3.jpg" data-hover="img2/img15.jpg" data-original-src="img/occasions/occasion3.jpg" />
+                <p class="item-name">Flower 15</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box occasions-box">
+                <img src="img/occasions/occasion4.jpg" data-hover="img2/img16.jpg" data-original-src="img/occasions/occasion4.jpg" />
+                <p class="item-name">Flower 16</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-box plants-box">
+                <img src="img/plants/plant1.jpg" data-hover="img2/img17.jpg" data-original-src="img/plants/plant1.jpg" />
+                <p class="item-name">Flower 17</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box plants-box">
+                <img src="img/plants/plant2.jpg" data-hover="img2/img18.jpg" data-original-src="img/plants/plant2.jpg" />
+                <p class="item-name">Flower 18</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box plants-box">
+                <img src="img/plants/plant3.jpg" data-hover="img2/img19.jpg" data-original-src="img/plants/plant3.jpg" />
+                <p class="item-name">Flower 19</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image-box plants-box">
+                <img src="img/plants/plant4.jpg" data-hover="img2/img20.jpg" data-original-src="img/plants/plant4.jpg" />
+                <p class="item-name">Flower 20</p>
+                <p class="item-price">$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="image-details-container" style="display: none;">
+        <div class="image-details">
+            <div class="additional-images-container">
+                <img src="" id="additional-image-1" class="additional-image">
+                <img src="" id="additional-image-2" class="additional-image">
+            </div>
+            <div class="image-preview">
+                <img src="" id="selected-image">
+            </div>
+            <div class="details">
+                <p id="image-name"></p>
+                <p id="image-price"></p>
+                <div class="order-section">
+                    <label for="gift-message">Add a gift message?</label>
+                    <select id="gift-message" class="gift-message">
+                        <option value="yes">Yes</option>
+                        <option value="no" selected>No</option>
+                    </select>
+
+                    <div id="gift-message-fields" class="add-something" style="display: none;">
+                        <label for="from">From:</label>
+                        <input type="text" id="from" name="from">
+
+                        <label for="to">To:</label>
+                        <input type="text" id="to" name="to">
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <label class="add-something">Send it with a little something:</label>
+                    <div class="add-something">
+                        <input type="checkbox" id="add-chocolate" name="add-chocolate">
+                        <label for="add-chocolate">Add chocolate ($4)</label>
+                    </div>
+                    <div class="add-something">
+                        <input type="checkbox" id="add-balloon" name="add-balloon">
+                        <label for="add-balloon">Add a balloon ($3)</label>
+                    </div>
+                    <div class="add-something">
+                        <input type="checkbox" id="add-wine-spirits" name="add-wine-spirits">
+                        <label for="add-wine-spirits">Add wine & Spirits ($8)</label>
+                    </div>
+
+                    <label for="flower-quantity" class="flower-counter">Choose quantity:</label>
+                    <input type="number" id="flower-quantity" name="flower-quantity" min="1" value="1" class="flower-counter">
+
+                    <button class="add-to-cart-button">Add to Cart</button>
+
+                    <div class="details-section">
+                        <h3>Details:</h3>
+                        <p class="description">Description goes here...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div>
+            <i class="fas fa-star"></i>
+            <div>
+                <h4>EXPERT SERVICE</h4>
+                <p>business since 1998</p>
+            </div>
+        </div>
+        <div>
+            <i class="fas fa-truck"></i>
+            <div>
+                <h4>SAME DAY DELIVERY</h4>
+                <p>Before 4pm across Lebanon</p>
+            </div>
+        </div>
+        <div>
+            <i class="fas fa-info-circle"></i>
+            <div>
+                <h4>FOR MORE INFO'S</h4>
+                <p>81/275729</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="hpFooter">
+        <div class="Frow">
+            <div class="Fcolumn">
+                <h1>CONTACT INFORMATION</h1>
+                <div class="FIrow">
+                    <div class="column with-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="finfo">Dbayeh, Lebanon</span>
+                    </div>
+                </div>
+                <div class="FIrow">
+                    <div class="column with-icon">
+                        <i class="fas fa-phone"></i>
+                        <span class="finfo">+961 81/275729</span>
+                    </div>
+                </div>
+                <div class="FIrow">
+                    <div class="column with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <span class="finfo">hbouakel2@gmail.com</span>
+                    </div>
+                </div>
+                <div class="FIrow">
+                    <div class="column with-icon">
+                        <i class="fas fa-clock"></i>
+                        <span class="finfo">Working Days: Mon - Sat / 8:00am - 7:00pm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Fcolumn">
+                <h1>GET TO KNOW US</h1>
+                <ul class="links">
+                    <li><a href="About us.html">About us</a></li>
+                    <li><a href="#myGallery">Gallery</a></li>
+                    <li><a href="#myEvents">Events</a></li>
+                </ul>
+            </div>
+            <div class="Fcolumn">
+                <h1>LET US HELP YOU</h1>
+                <ul class="links">
+                    <li><a href="#myRates">Delivery rates</a></li>
+                    <li><a href="Form.html">Contact us</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </div>
+            <div class="Fcolumn">
+                <h1>BE THE FIRST TO KNOW</h1>
+                <ul class="links">
+                    <li>Get all the latest information on our products, services, offers and promotions.</li>
+                </ul>
+                <div class="Socialrow">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/habib__bouakel" class="Infoicon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Habib Bou Akel" class="Infoicon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/habib-bou-akel-756376234/" class="Infoicon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="Frow">
+        <div class="full-width-column">
+            <P>Copyright ©2024 All rights reserved | This template is made with &#x2764; by Habib</P>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

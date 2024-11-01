@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <div class="contact" id="myContact">
+        <div class="Fcontact-section">CONTACT US</div>
+        <div class="contactCont">
+            <div class="contact-form">
+                <form id="contactForm" method="post" action="contactusAction.php">
+                    <input type="text" placeholder="First Name" class="shift-placeholder" name="firstName" id="firstName">
+                    <input type="text" placeholder="Last Name" class="shift-placeholder" name="lastName" id="lastName">
+                    <input type="email" placeholder="Email" class="shift-placeholder" name="email" id="email"> <!-- Added input field for email -->
+                    <input type="text" placeholder="Subject" class="shift-placeholder" name="subject" id="subj">
+                    <textarea rows="4" cols="50" placeholder="Message" class="shift-placeholder" name="message" id="message"></textarea>
+                    <button type="submit" class="send-message-btn">Send Message</button>
+                </form>
+
+            </div>
+
+            <div class="contact-info">
+                <div class="ContactRow">
+                    <div class="Contacticon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text">
+                        <h1>Address:</h1>
+                        <p>Jezzine</p>
+                    </div>
+                </div>
+
+                <div class="ContactRow">
+                    <div class="Contacticon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h1>Phone:</h1>
+                        <p><a href="tel:+96181275729">+961 81/275729</a></p>
+                    </div>
+                </div>
+
+                <div class="ContactRow">
+                    <div class="Contacticon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h1>Email:</h1>
+                        <p><a href="mailto:hbouakel2@gmail.com">hbouakel2@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="ContactRow">
+                    <div class="Contacticon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="text">
+                        <h1>Website:</h1>
+                        <p><a href="https://Vertica.com" target="_blank">Vertica.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            var firstName = document.getElementById('firstName');
+            var lastName = document.getElementById('lastName');
+            var email = document.getElementById('email'); // Added email field
+            var subject = document.getElementById('subj');
+            var message = document.getElementById('message');
+
+            var errors = [];
+
+            if (firstName.value.trim() === '' || !/^[a-zA-Z]+$/.test(firstName.value.trim())) {
+                errors.push(firstName);
+            }
+
+            if (lastName.value.trim() === '' || !/^[a-zA-Z]+$/.test(lastName.value.trim())) {
+                errors.push(lastName);
+            }
+
+            if (email.value.trim() === '' || !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value.trim())) { // Validate email format
+                errors.push(email);
+            }
+
+            if (subject.value.trim() === '') {
+                errors.push(subject);
+            }
+
+            if (message.value.trim() === '') {
+                errors.push(message);
+            }
+
+            var formInputs = document.querySelectorAll('#contactForm input, #contactForm textarea');
+            formInputs.forEach(function (input) {
+                input.style.borderColor = '';
+            });
+
+            errors.forEach(function (field) {
+                field.style.borderColor = 'red';
+            });
+
+            if (errors.length === 0) {
+            } else {
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

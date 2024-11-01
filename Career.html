@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <style>
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-section {
+            margin-top: 100px;
+            font-size: 13px;
+            display: block;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            color: #b1b493;
+            letter-spacing: 3px;
+            font-family: Poppins, Arial, sans-serif;
+            font-weight: 600;
+        }
+
+        .mycontact-section {
+            margin-top: 20px;
+            font-family: Poppins, Arial, sans-serif;
+            margin-bottom: 20px;
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .Fcontact-section {
+            color: #B1B493;
+            font: 36px Poppins, Arial, sans-serif;
+            margin-left: -700px;
+            font-weight: bold;
+        }
+
+        .contactCont {
+            display: flex;
+        }
+
+        .contact-form {
+            width: 700px;
+            height: 600px;
+            background-color: #f0f0f0;
+            margin-right: 30px;
+            margin-top: 50px;
+        }
+
+        .contact-info {
+            width: 600px;
+            height: 500px;
+            background-color: white;
+            margin-right: 10px;
+            margin-top: 50px;
+        }
+
+        .contact-form input {
+            width: 600px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 30px;
+            height: 50px;
+            border: 2px solid #b1b493;
+        }
+
+        .shift-placeholder::placeholder {
+            padding-left: 20px;
+        }
+
+        .shift-placeholderD::placeholder{
+            padding-left: 20px;
+        }
+
+        #subj {
+            width: 650px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 25px;
+            height: 50px;
+            border: 2px solid #b1b493;
+        }
+
+        .contact-form textarea {
+            width: 650px;
+            height: 200px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 25px;
+            border: 2px solid #b1b493;
+        }
+
+        .send-message-btn {
+            background-color: #b1b493;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 25px;
+            height: 50px;
+            width: 200px;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .ContactRow {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .Contacticon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+            .Contacticon i {
+                font-size: 20px;
+                margin-bottom: 10px;
+                border-radius: 50%;
+                background-color: #b1b493;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        .text h1 {
+            color: black;
+            font-size: 16px;
+            font-family: Poppins, Arial, sans-serif;
+            margin-left: 10px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .text p {
+            color: #999999;
+            font-size: 16px;
+            font-family: Poppins, Arial, sans-serif;
+            margin-left: 10px;
+            font-weight: bold;
+            margin-top: -10px;
+        }
+
+        .text a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    </style>
+
+    <div class="contact" id="myContact">
+        <div class="Fcontact-section">APPLICATION</div>
+        <div class="contactCont">
+            <div class="contact-form">
+                <form id="contactForm" method="post" action="contactusAction2.php">
+                    <input type="text" placeholder="First Name" class="shift-placeholder" name="firstName" id="firstName">
+                    <input type="text" placeholder="Last Name" class="shift-placeholder" name="lastName" id="lastName">
+                    <input type="email" placeholder="Email" class="shift-placeholder" name="email" id="email">
+                    <input type="text" placeholder="Phone Number" class="shift-placeholder" name="phoneNumber" id="phoneNumber">
+                    <input type="date" placeholder="Date of Birth" class="shift-placeholderD" name="dateOfBirth" id="dateOfBirth">
+                    <input type="number" placeholder="Years of Experience" class="shift-placeholder" name="yearsOfExperience" id="yearsOfExperience">
+                    <button type="submit" class="send-message-btn">Apply</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="ContactRow">
+                    <div class="Contacticon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text">
+                        <h1>Address:</h1>
+                        <p>Jezzine</p>
+                    </div>
+                </div>
+
+                <div class="ContactRow">
+                    <div class="Contacticon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h1>Phone:</h1>
+                        <p><a href="tel:+96181275729">+961 81/275729</a></p>
+                    </div>
+                </div>
+
+                <div class="ContactRow">
+                    <div class="Contacticon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h1>Email:</h1>
+                        <p><a href="mailto:hbouakel2@gmail.com">hbouakel2@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="ContactRow">
+                    <div class="Contacticon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="text">
+                        <h1>Website:</h1>
+                        <p><a href="https://Vertica.com" target="_blank">Vertica.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            var firstName = document.getElementById('firstName');
+            var lastName = document.getElementById('lastName');
+            var email = document.getElementById('email');
+            var phoneNumber = document.getElementById('phoneNumber');
+            var dateOfBirth = document.getElementById('dateOfBirth');
+            var yearsOfExperience = document.getElementById('yearsOfExperience');
+
+            var errors = [];
+
+            if (firstName.value.trim() === '' || !/^[a-zA-Z]+$/.test(firstName.value.trim())) {
+                errors.push(firstName);
+            }
+
+            if (lastName.value.trim() === '' || !/^[a-zA-Z]+$/.test(lastName.value.trim())) {
+                errors.push(lastName);
+            }
+
+            if (email.value.trim() === '' || !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value.trim())) {
+                errors.push(email);
+            }
+
+            if (phoneNumber.value.trim() === '' || !/^\+?\d{10,15}$/.test(phoneNumber.value.trim())) {
+                errors.push(phoneNumber);
+            }
+
+            if (dateOfBirth.value.trim() === '') {
+                errors.push(dateOfBirth);
+            }
+
+            if (yearsOfExperience.value.trim() === '' || !/^\d+$/.test(yearsOfExperience.value.trim())) {
+                errors.push(yearsOfExperience);
+            }
+
+            var formInputs = document.querySelectorAll('#contactForm input');
+            formInputs.forEach(function (input) {
+                input.style.borderColor = '';
+            });
+
+            errors.forEach(function (field) {
+                field.style.borderColor = 'red';
+            });
+
+            if (errors.length === 0) {
+            } else {
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

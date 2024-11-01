@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Title and Overlay</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="ABnavbar">
+        <a href="#about">About</a>
+        <a href="#explore">Explore</a>
+        <a href="#team">Our Team</a>
+        <a href="#career">Careers</a>
+        <a href="index.html">Homepage</a>
+        <span class="company-name">VERTICA</span>
+    </div>
+
+    <div class="ABsection" id="about">
+        <h6>About us</h6>
+        <h1>Setting up Standard<span class="cr"><br />for Creativity</span></h1>
+    </div>
+
+    <div class="ABimage-container">
+        <img src="aboutus-img1.jpg" alt="Descriptive Alt Text">
+        <div class="ABoverlay">
+            <h1>Our Story</h1>
+            <p>Founded in 1998 by Imad Mahfouz, Vertica has grown from a small boutique in Dbayeh into a renowned destination for bespoke floral arrangements and unforgettable wedding experiences. For over two decades, we've been dedicated to creating beautiful moments with elegance and creativity, earning a reputation as one of the most trusted names in the industry. Join us as we continue to craft stunning floral designs and magical weddings, turning dreams into reality.</p>
+        </div>
+    </div>
+
+    <div class="ABsection2">
+        <h1>Beyond the Veil<span class="cr2"><br />Crafting Memorable Moments</span></h1>
+        <div class="exp">
+            <p>At Vertica, we don't just plan weddings; we orchestrate unforgettable experiences. Behind the scenes, our dedicated team ensures every detail is perfect, guided by a commitment to excellence and a passion for creativity.<br /> <br />From the initial consultation to the final farewell, we address our clients with warmth and understanding, making them feel like cherished friends. With innovation at our core, we set new standards in the wedding industry, infusing each event with personal touches that reflect our clients' unique love stories.<br /><br /> Join us as we continue to push boundaries, creating magical memories that last a lifetime.</p>
+        </div>
+    </div>
+
+    <div class="ABsection" id="explore">
+        <h1>Explore our<span class="cr"><br />Company Playbook</span></h1>
+    </div>
+
+    <div class="playbook-img">
+        <img class="playbook1" src="playbook1.png" />
+        <img class="playbook2" src="playbook2.jpg" />
+    </div>"
+
+    <div class="content-container">
+        <div class="content-item">
+            <div class="number">01</div>
+            <div class="content">
+                <h2>Services and Offerings:</h2>
+                <p class="smaller">Outlines services offered, including planning, design, venue selection, and vendor management. Clear descriptions and pricing provided for clients.</p>
+            </div>
+        </div>
+        <div class="content-item">
+            <div class="number">02</div>
+            <div class="content">
+                <h2>Client Experience and Communication:</h2>
+                <p class="smaller">Focuses on fostering positive client experiences through effective communication, consultations, and meeting agendas.</p>
+            </div>
+        </div>
+        <div class="content-item">
+            <div class="number">03</div>
+            <div class="content">
+                <h2>Vendor Relationships and Partnerships:</h2>
+                <p class="smaller">Emphasizes the importance of strong vendor relationships and clear communication for successful event execution.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="employees" id="team">
+        <div class="ABsection">
+            <br /><br /><br />
+            <h1>Team of<span class="cr"><br />Leaders and Executives</span></h1>
+        </div>
+
+        <div class="employee-container">
+            <div class="employee">
+                <img src="emp1.jpg" alt="Employee 1">
+                <div class="name">Imad Mahfouz</div>
+                <div class="position">CEO</div>
+            </div>
+            <div class="employee">
+                <img src="emp2.jpg" alt="Employee 2">
+                <div class="name">Rania Moutrane</div>
+                <div class="position">Marketing</div>
+            </div>
+            <div class="employee">
+                <img src="emp3.jpg" alt="Employee 3">
+                <div class="name">Joe Youssef</div>
+                <div class="position">Designer</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="join" id="career">
+        <img src="join.jpg" />
+        <div class="join-info">
+            <h1>Join our team</h1>
+            <p>Apply for wedding designers position, and be part of our team.</p>
+            <button>Apply</button>
+        </div>
+    </div>
+
+    <footer class="Gfooter">
+        <div class="Socialrow">
+            <div class="Gsocial-icons">
+                <a href="https://www.instagram.com/habib__bouakel" class="Infoicon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Habib Bou Akel" class="Infoicon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/habib-bou-akel-756376234/" class="Infoicon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <p>Copyright ©2024 All rights reserved | This template is made with ❤ by Habib</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // Add a scroll event listener
+            $(window).on('scroll', function () {
+                var scrollPos = $(window).scrollTop();
+
+                // Loop through each link in the navbar
+                $('.ABnavbar a').each(function () {
+                    var sectionId = $(this).attr('href'); // Get the href value
+                    var sectionOffset = $(sectionId).offset().top; // Get the offset of the corresponding section
+
+                    // Check if the current scroll position is within 100 pixels of the section
+                    if (scrollPos >= sectionOffset - 100) {
+                        // Remove the 'active' class from all links
+                        $('.ABnavbar a').removeClass('active');
+                        // Add the 'active' class to the current link
+                        $(this).addClass('active');
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
